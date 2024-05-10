@@ -1,13 +1,6 @@
 import os
 import zipfile
-import random
-import shutil
-import tensorflow as tf
-from keras_preprocessing.image import ImageDataGenerator
-from shutil import copyfile
-import matplotlib.pyplot as plt
 import requests
-
 import os
 
 

@@ -82,9 +82,7 @@ def split_data(SOURCE_DIR, TRAINING_DIR, VALIDATION_DIR, SPLIT_SIZE):
 
   pass
 
-  # grader-required-cell
 
-# Test your split_data function
 
 # Define paths
 CAT_SOURCE_DIR = "PetImages/Cat/"
@@ -117,13 +115,12 @@ if len(os.listdir(VALIDATION_DOGS_DIR)) > 0:
 split_size = .9
 
 # Run the function
-# NOTE: Messages about zero length images should be printed out
+
 split_data(CAT_SOURCE_DIR, TRAINING_CATS_DIR, VALIDATION_CATS_DIR, split_size)
 split_data(DOG_SOURCE_DIR, TRAINING_DOGS_DIR, VALIDATION_DOGS_DIR, split_size)
 
 # Check that the number of images matches the expected output
 
-# Your function should perform copies rather than moving images so original directories should contain unchanged images
 print(f"\n\nOriginal cat's directory has {len(os.listdir(CAT_SOURCE_DIR))} images")
 print(f"Original dog's directory has {len(os.listdir(DOG_SOURCE_DIR))} images\n")
 
